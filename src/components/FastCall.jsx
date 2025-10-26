@@ -20,6 +20,7 @@ export default function FastCall() {
   const handleCall = (number) => {
     if (!isMobile) {
       alert(lang === 'he' ? 'חיוג זמין בטלפון בלבד' : 'Mobile only')
+      return
     }
     window.location.href = `tel:${number}`
   }

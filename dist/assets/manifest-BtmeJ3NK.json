@@ -1,0 +1,21 @@
+{
+  "short_name": "FastCall",
+  "name": "FastCall Emergency Dialer",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0047AB",
+  "background_color": "#ffffff",
+  "orientation": "portrait"
+}

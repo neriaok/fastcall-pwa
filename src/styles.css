@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f9;
+}
+
+.fastcall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+
+  .lang-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #eeeeee;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #dddddd;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    button {
+      padding: 15px 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: none;
+      color: #ffffff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.1);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+
+    .police {
+      background: linear-gradient(
+        90deg,
+        #1250ff 50%,
+        #ff0000 50%
+      );
+    }
+
+    .ambulance {
+      background-color: #ff0000;
+    }
+
+    .firefighters {
+      background-color: #ff8c00;
+    }
+  }
+}
